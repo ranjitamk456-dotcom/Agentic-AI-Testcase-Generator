@@ -1,0 +1,65 @@
+{
+  "feature": "Apply Promo Code at Checkout",
+  "acceptance_criteria": [
+    {
+      "id": "AC1",
+      "title": "Valid percentage code.",
+      "text": "Applying SAVE10 to a ₹1000 subtotal reduces it by ₹100; the order total updates accordingly."
+    },
+    {
+      "id": "AC2",
+      "title": "Valid fixed code above minimum.",
+      "text": "Applying FLAT200 to a ₹1500 subtotal reduces it by ₹200."
+    },
+    {
+      "id": "AC3",
+      "title": "Fixed code below minimum.",
+      "text": "Applying FLAT200 to an ₹800 subtotal is rejected with \"This code requires a minimum order of ₹1000.\""
+    },
+    {
+      "id": "AC4",
+      "title": "Expired code.",
+      "text": "Applying an expired code shows \"This code has expired.\" and the total is unchanged."
+    },
+    {
+      "id": "AC5",
+      "title": "Invalid code.",
+      "text": "Applying a non-existent code shows \"Invalid promo code.\" and the total is unchanged."
+    },
+    {
+      "id": "AC6",
+      "title": "Case insensitivity.",
+      "text": "save10 behaves identically to SAVE10."
+    },
+    {
+      "id": "AC7",
+      "title": "Already used.",
+      "text": "Reapplying a single-use code already redeemed by the customer shows \"This code has already been used.\""
+    },
+    {
+      "id": "AC8",
+      "title": "Discount cap.",
+      "text": "Applying FLAT200 to a ₹150 subtotal results in a subtotal of ₹0, never negative."
+    },
+    {
+      "id": "AC9",
+      "title": "Replace existing code.",
+      "text": "Applying a second code prompts the user to replace the first; on confirm, only the new discount applies."
+    },
+    {
+      "id": "AC10",
+      "title": "Empty input.",
+      "text": "Clicking Apply with no code shows \"Enter a promo code.\""
+    },
+    {
+      "id": "AC11",
+      "title": "Whitespace/format.",
+      "text": "Leading/trailing spaces are trimmed before validation."
+    },
+    {
+      "id": "AC12",
+      "title": "Recalculation on cart change.",
+      "text": "If the cart changes after a code is applied and the subtotal drops below the minimum, the discount is re-validated and removed if no longer eligible."
+    }
+  ]
+}
