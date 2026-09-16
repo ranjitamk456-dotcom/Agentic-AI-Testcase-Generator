@@ -1,0 +1,193 @@
+AGENTIC AI TEST CASE GENERATOR
+REQUIREMENT DOCUMENT
+
+1. PROJECT OBJECTIVE
+
+Build an Agentic AI-based Test Case Generator that reads software requirements and Acceptance Criteria and generates a comprehensive, requirement-traceable QA test suite.
+
+The generated test suite must include:
+- Positive test cases
+- Negative test cases
+- Boundary test cases
+- Edge test cases
+
+The Agentic AI workflow is:
+Generate -> Critique -> Improve -> Structure -> Validate -> Coverage Analysis -> Execution QA Gate -> Final Reporting
+
+2. TECHNOLOGY
+
+- Google Colab
+- Python
+- Groq API
+- openai/gpt-oss-120b
+- Pandas
+- JSON
+- ReportLab
+- OpenPyXL
+- JSON Repair
+
+3. PROJECT STRUCTURE
+
+The project must use one main Google Colab/Jupyter notebook.
+
+Only these two files remain external and editable:
+- feature_a_acceptance_criteria.json
+- feature_b_acceptance_criteria.json
+
+All implementation, agents, prompts, utilities, validation, reporting, logs, summaries and output-generation logic remain in the single notebook.
+
+4. MANDATORY EXECUTION ORDER
+
+Common Project Setup
+        |
+        v
+Feature A - Complete End-to-End
+        |
+        v
+Feature A Final Summary
+        |
+        v
+Feature B - Complete End-to-End
+        |
+        v
+Feature B Final Summary
+        |
+        v
+Final Combined Reporting
+
+Feature B must not start until Feature A is completely finished.
+
+5. FEATURE A - USER LOGIN
+
+User Story:
+As a registered user, I want to log in with my email and password so that I can access my account.
+
+The login screen contains:
+- Email field
+- Password field
+- Log In button
+- Forgot password link
+
+The test suite must cover the supplied Feature A Acceptance Criteria, including:
+- Valid login
+- Invalid password
+- Unregistered email
+- Empty fields
+- Invalid email format
+- Account lockout
+- Email/password case sensitivity
+- Session handling
+- Inactive account
+- Password length boundaries
+
+Forgot Password is out of scope.
+
+Acceptance Criteria are maintained in:
+feature_a_acceptance_criteria.json
+
+6. FEATURE B - APPLY PROMO CODE AT CHECKOUT
+
+User Story:
+As a shopper, I want to apply a promo code at checkout so that I receive a discount on my order.
+
+The checkout contains:
+- Promo code input
+- Apply button
+
+The test suite must cover the supplied Feature B Acceptance Criteria, including:
+- Valid percentage discount
+- Valid fixed discount
+- Minimum subtotal
+- Expired code
+- Invalid code
+- Case-insensitive code
+- Single-use code
+- Discount cap
+- Replacing an existing code
+- Empty input
+- Whitespace handling
+- Recalculation after cart changes
+
+Acceptance Criteria are maintained in:
+feature_b_acceptance_criteria.json
+
+7. TEST CASE FIELDS
+
+Every generated test case should contain:
+- Test Case ID
+- Acceptance Criteria ID
+- Test Scenario
+- Preconditions
+- Test Data
+- Test Steps
+- Expected Result
+- Category
+- Priority
+- Risk
+
+8. TEST CATEGORIES
+
+Positive
+Negative
+Boundary
+Edge
+
+9. AGENTIC AI REQUIREMENTS
+
+Generator:
+Creates the initial comprehensive test suite.
+
+Critic:
+Reviews the generated suite for missing coverage, boundary conditions, negative scenarios, edge cases, timing, thresholds, state changes and traceability.
+
+Improver:
+Uses the critique to improve the generated suite.
+
+Structure:
+Converts the improved output into a consistent structured format.
+
+10. VALIDATION
+
+Deterministic Python validation must independently check:
+- Required columns
+- Test Case IDs
+- Duplicate IDs
+- Acceptance Criteria format
+- Categories
+- Priorities
+- Risks
+- Missing values
+- Acceptance Criteria coverage
+- Category coverage
+- Requirement traceability
+
+11. TEST EXECUTION
+
+The supplied capstone does not contain a real application, API or browser System Under Test.
+
+Therefore, the project must not fabricate application PASS/FAIL results.
+
+The execution stage performs a deterministic QA gate against the generated test-suite artifact.
+
+12. REPORTING
+
+The project must generate coverage information, coverage gaps, validation results, execution-gate results and a final combined summary.
+
+13. EXPECTED OUTPUTS
+
+- final_test_suite.csv
+- validation_feature_a.csv
+- validation_feature_b.csv
+- coverage_report.csv
+- coverage_gaps.csv
+- execution_feature_a.csv
+- execution_feature_b.csv
+- final_summary.csv
+- DESIGN_WRITEUP.md
+- Agentic_AI_Capstone_Reflection.pdf
+
+14. QUALITY OBJECTIVE
+
+The project should demonstrate how Agentic AI can accelerate QA test design while maintaining requirement traceability, structured coverage, deterministic validation and human review.
+
+Human QA review remains necessary for business-risk interpretation, requirement ambiguity, environment-specific data and automation feasibility.
