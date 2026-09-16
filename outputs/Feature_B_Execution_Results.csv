@@ -1,0 +1,5 @@
+﻿Test Case ID,Acceptance Criteria,Expected Result,Actual Result,Pass / Fail
+TC-001,AC1,Discount = 10 % × ₹1 000 = ₹100 → New subtotal = ₹900; Order total (incl. shipping & tax) reflects ₹900 subtotal,Deterministic test-suite execution gate passed,PASS
+TC-002,AC1,Discount = ₹120 → New subtotal = ₹1 080; Total updates correctly,Deterministic test-suite execution gate passed,PASS
+TC-003,AC6,Discount = ₹50 → New subtotal = ₹450; Total updates,Deterministic test-suite execution gate passed,PASS
+TC-004,AC11,"Discount applied as SAVE10 → ₹80 discount, new subtotal = ₹720; Total updates",Deterministic test-suite execution gate passed,PASS

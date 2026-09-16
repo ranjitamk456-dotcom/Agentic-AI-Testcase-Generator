@@ -1,0 +1,4 @@
+Feature: Apply Promo Code at Checkout
+Execution mode: existing deterministic QA gate
+Test cases: 4
+Coverage gaps: 9

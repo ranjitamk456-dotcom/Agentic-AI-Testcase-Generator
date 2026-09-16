@@ -1,0 +1,10 @@
+﻿Test Case ID,Acceptance Criteria,Expected Result,Actual Result,Pass / Fail
+TC-001,AC1,User is redirected to Dashboard; a session cookie is created,Deterministic test-suite execution gate passed,PASS
+TC-002,AC2,"Inline error ""Invalid email or password"" shown; URL stays on login page; no session created",Deterministic test-suite execution gate passed,PASS
+TC-003,AC3,"Generic error ""Invalid email or password"" displayed; user remains on login page; no session created",Deterministic test-suite execution gate passed,PASS
+TC-004,AC4,Inline validation prompts to fill required fields; no request sent to server,Deterministic test-suite execution gate passed,PASS
+TC-005,AC5,"Inline message ""Enter a valid email address"" shown; no request sent",Deterministic test-suite execution gate passed,PASS
+TC-006,AC6,"After 5th failed attempt, message ""Your account is locked. Try again later."" displayed; subsequent correct credentials still show lockout message",Deterministic test-suite execution gate passed,PASS
+TC-007,AC7,Login succeeds and user is redirected to Dashboard; email case does not affect authentication,Deterministic test-suite execution gate passed,PASS
+TC-008,AC8,User remains on Dashboard; session cookie persists; no re‑login required,Deterministic test-suite execution gate passed,PASS
+TC-009,AC9,"Message ""This account is inactive. Contact support."" displayed; user is not logged in",Deterministic test-suite execution gate passed,PASS

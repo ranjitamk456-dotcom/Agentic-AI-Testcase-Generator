@@ -1,0 +1,13 @@
+﻿Feature,Acceptance Criteria,Coverage Status,Test Case Count,Test Case IDs
+Apply Promo Code at Checkout,AC1,COVERED,2,"TC-001, TC-002"
+Apply Promo Code at Checkout,AC2,MISSING,0,
+Apply Promo Code at Checkout,AC3,MISSING,0,
+Apply Promo Code at Checkout,AC4,MISSING,0,
+Apply Promo Code at Checkout,AC5,MISSING,0,
+Apply Promo Code at Checkout,AC6,COVERED,1,TC-003
+Apply Promo Code at Checkout,AC7,MISSING,0,
+Apply Promo Code at Checkout,AC8,MISSING,0,
+Apply Promo Code at Checkout,AC9,MISSING,0,
+Apply Promo Code at Checkout,AC10,MISSING,0,
+Apply Promo Code at Checkout,AC11,COVERED,1,TC-004
+Apply Promo Code at Checkout,AC12,MISSING,0,

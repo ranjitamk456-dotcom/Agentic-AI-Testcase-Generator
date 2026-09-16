@@ -1,0 +1,11 @@
+﻿Check,Status,Details
+Required Columns,FAIL,"{'status': 'PASS', 'missing_columns': [], 'available_columns': ['Test Case ID', 'Feature', 'Acceptance Criteria', 'Test Scenario', 'Preconditions', 'Test Data', 'Test Steps', 'Expected Result', 'Category', 'Priority', 'Risk']}"
+Duplicate IDs,PASS,"{'PASS': True, 'Duplicate IDs': []}"
+Categories,PASS,"{'PASS': True, 'Invalid Categories': []}"
+Priorities,PASS,"{'PASS': True, 'Invalid Priorities': []}"
+Risks,PASS,"{'PASS': True, 'Invalid Risks': []}"
+Blank Values,PASS,"{'PASS': True, 'Blank Fields': {}}"
+AC Format,PASS,"{'PASS': True, 'Invalid AC References': []}"
+AC Coverage,FAIL,"{'Total ACs': 12, 'Covered ACs': 3, 'Missing ACs': ['AC10', 'AC12', 'AC2', 'AC3', 'AC4', 'AC5', 'AC7', 'AC8', 'AC9'], 'Unexpected ACs': [], 'Coverage %': 25.0, 'PASS': False}"
+Category Coverage,FAIL,"{'PASS': False, 'Missing Categories': ['Edge', 'Negative']}"
+Test Count,FAIL,"{'Count': 4, 'Minimum Expected': 10, 'PASS': False}"

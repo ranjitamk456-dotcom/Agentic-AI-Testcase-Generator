@@ -1,0 +1,4 @@
+Feature: User Login
+Execution mode: existing deterministic QA gate
+Test cases: 9
+Coverage gaps: 0
